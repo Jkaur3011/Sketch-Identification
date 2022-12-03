@@ -1,0 +1,60 @@
+body{
+    background-color:rgb(0, 128, 70);
+    color: aliceblue;
+}
+
+h1{
+    color: rgb(0, 128, 70);
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    padding:10px;
+}
+
+#show_sketch{
+    float: right;
+}
+
+p{
+    padding-top: 10px;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+canvas{
+    background-color: white;
+    border-width: 2px;
+    border-style: ridge;
+    border-color: white;
+    margin-top: 60px;
+    border-radius: 8px;
+    animation-name: mycanvas;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes mycanvas {
+    from {box-shadow: 10px 10px 50px black;}
+    to {box-shadow: 10px 10px 50px whitesmoke;}
+}
+
+#clearcanvas{
+    color: black;
+    font-size: 15px;
+    border-width: 2px;
+    border-style: ridge;
+    border-color: black;
+    animation-name: buttoncc;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes buttoncc{
+    0% {background-color: darkslateblue;}
+    25% {background-color: lightskyblue;}
+    50% {background-color: lightgreen;}
+    75% {background-color: yellow;}
+    100% {background-color: orangered;}
+}
